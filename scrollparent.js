@@ -34,12 +34,6 @@
 
     var ps = parents(node.parentNode, []);
 
-    for (var i = 0; i < ps.length; i += 1) {
-      if (scroll(ps[i])) {
-        return ps[i];
-      }
-    }
-
     return document.scrollingElement || document.documentElement;
   };
 
